@@ -1,0 +1,15 @@
+2025-06-22 18:13:02,566 INFO — Saved raw data to data/raw/AAPL_2025-06-22.csv
+2025-06-22 18:13:03,219 INFO — Saved raw data to data/raw/MSFT_2025-06-22.csv
+2025-06-22 18:13:03,797 INFO — Saved raw data to data/raw/GOOGL_2025-06-22.csv
+2025-06-22 18:19:29,243 INFO — Saved raw data to data/raw/AAPL_2025-06-22.csv
+2025-06-22 18:19:29,302 ERROR — Error processing AAPL: ['Close']
+2025-06-22 18:19:32,260 INFO — Saved raw data to data/raw/MSFT_2025-06-22.csv
+2025-06-22 18:19:32,325 ERROR — Error processing MSFT: ['Close']
+2025-06-22 18:19:34,614 INFO — Saved raw data to data/raw/GOOGL_2025-06-22.csv
+2025-06-22 18:19:34,675 ERROR — Error processing GOOGL: ['Close']
+2025-06-22 18:22:18,626 INFO — Saved raw data to data/raw/AAPL_2025-06-22.csv
+2025-06-22 18:22:18,691 ERROR — Error processing AAPL: ['Close']
+2025-06-22 18:22:19,168 INFO — Saved raw data to data/raw/MSFT_2025-06-22.csv
+2025-06-22 18:22:19,226 ERROR — Error processing MSFT: ['Close']
+2025-06-22 18:22:19,812 INFO — Saved raw data to data/raw/GOOGL_2025-06-22.csv
+2025-06-22 18:22:19,871 ERROR — Error processing GOOGL: ['Close']
