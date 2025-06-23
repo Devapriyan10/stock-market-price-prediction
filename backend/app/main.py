@@ -27,12 +27,17 @@ app.add_middleware(
 # --------------------------------------
 models_dir = os.path.join(os.path.dirname(__file__), "models")
 models = {}
+if os.path.exists(models_dir):
+    for filename in os.listdir(models_dir):
+        if filename.endswith(".pkl"):
+            try:
+                model_path = os.path.join(models_dir, filename)
+                models[ticker] = joblib.load(model_path)
+            except Exception as e:
+                print(f"Warning: failed to load model {filename} — {e}")
+else:
+    print("Warning: models directory not found")
 
-for filename in os.listdir(models_dir):
-    if filename.endswith(".pkl"):
-        ticker = filename.replace(".pkl", "")
-        model_path = os.path.join(models_dir, filename)
-        models[ticker] = joblib.load(model_path)
 
 # Save to app state
 app.state.models = models
