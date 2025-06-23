@@ -12,7 +12,7 @@ from app.routes.predict import router as predict_router  # Your predict.py route
 # --------------------------------------
 # Initialize the FastAPI app
 # --------------------------------------
-app = FastAPI(title="Stock Price Prediction API")
+app = FastAPI()
 
 # Enable CORS (for frontend)
 app.add_middleware(
