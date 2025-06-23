@@ -141,3 +141,6 @@
   { "ticker": "TVSMOTOR.NS", "name": "TVS Motor Company" },
   { "ticker": "ZEEL.NS", "name": "Zee Entertainment" }
 ]
+
+if not os.path.exists(data_path):
+    print("Warning: companies.json not found")
