@@ -17,10 +17,15 @@ app = FastAPI()
 # Enable CORS (for frontend)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[os.getenv("FRONTEND_URL", "http://localhost:5173")],
-    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_origins=[
+        "https://stock-price-prediction-system-lemon.vercel.app",
+        "http://localhost:5173"  # optional: dev mode
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 # --------------------------------------
 # Load all trained models from /models/
