@@ -1,6 +1,6 @@
 # Stage 1: build environment
 FROM python:3.11-slim AS builder
-
+EXPOSE 8000
 WORKDIR /app
 
 # System dependencies
