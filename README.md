@@ -17,5 +17,5 @@ Full-stack stock-price prediction web app:
 ```bash
 cd backend
 pip install -r requirements.txt
-python -m app.ml.train          # trains & persists models
+python -m app.ml.train
 uvicorn app.main:app --reload
