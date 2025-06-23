@@ -116,3 +116,8 @@ def predict_price(ticker: str, year: int):
         year=year,
         predicted_price=round(float(pred), 2)
     )
+
+@app.get("/")
+def root():
+    return {"status": "Backend is running"}
+
