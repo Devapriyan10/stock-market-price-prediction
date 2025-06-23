@@ -2,7 +2,8 @@
 
 import type { Company, HistoricalData, Prediction } from '../types';
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '/api';
+
 
 /**
  * Helper: call your FastAPI backend at `${API_BASE_URL}${path}`,
